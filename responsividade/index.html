@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Site para responsividade</title>
+</head>
+<style>
+     *{
+          padding: 0;
+          margin: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          box-sizing: border-box;
+     }
+     header{
+          background-color: yellow;
+          width: 100%;
+          height: 20vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .centro{
+          background-color: azure;
+          height: 70vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     .centro h2{
+          font-size: 4vh;
+     }
+     .txtImg{
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          align-items: center;
+     }
+     .txtImg img{
+          width: 40%;
+          height: 60%;
+     }
+     .txtImg p{
+          width: 80vh;
+     }
+     .textos{
+          display: flex;
+          flex-direction: column;
+          background-color: black;
+          padding: 5%;
+          color: yellow;
+          gap: 10px;
+     }
+     footer{
+          background-color: black;
+          height: 10vh;
+          color: yellow;
+          text-align: center;
+     }
+     /*tamanho de celular*/
+     @media (min-width: 300px) and (max-width: 1024px) { 
+          footer{
+               background-color: black;    
+          }
+          .txtImg{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 500px;
+          }
+          .textos{
+               margin-top: 10%;
+               width: 80%;
+               padding: 2%;
+          }
+          .textos p{
+               width: 100%;
+          }
+          
+     }
+     /* Tablets pequenos (768px a 1023px) */
+     @media (min-width: 768px) and (max-width: 1023px) {
+          .textos{
+               margin: 5%;
+          }
+     }
+     /*Tamanho de Tablets médios e grandes*/
+          @media (min-width: 1024px) and (max-width: 1279px) {
+               footer{
+                    background-color: blue;
+                    margin-top: 5%;
+               }
+               .textos{
+                    width: 40vh;
+               }
+               .textos p{
+                    width: 100%;
+               }
+          }
+          /*Tamanho de Notebooks*/
+          @media (min-width: 1280px) and (max-width: 1439px) {
+              footer{
+                    background-color: yellow;
+                    color: black;
+              } 
+          }
+          /*Tamanho de Computadores ou Notebooks Grandes*/
+          @media (min-width: 1440px) {
+               footer{
+                    background-color: black;
+               }
+          }
+     
+</style>
+<body>
+         <header><h1>Topo</h1></header> 
+         <div class="centro">
+               <h2>Meio do Site</h2>
+               <div class="txtImg">
+                    <img src="https://aquitemplacas.com.br/img/produtos/g/36-atencao-area-de-teste.jpg" alt="imagem de teste">
+                   <div class="textos">
+                         <p>Site apenas para deixar registrado valores da responsividade</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Commodi illo eveniet veniam, sunt cum sit eum eaque laborum 
+                              quas perspiciatis repudiandae doloremque asperiores 
+                              iste quisquam nulla fugit sequi. Ab, debitis.
+                         </p>
+                   </div>
+               </div>
+         </div>
+         <footer>
+               Footer do site
+         </footer>
+</body>
+</html>
